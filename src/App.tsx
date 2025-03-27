@@ -1,5 +1,4 @@
-"use client"
-
+import React from 'react'
 import { useState } from "react"
 import CodeEditor from "./components/CodeEditor"
 import PDFPreview from "./components/PDFPreview"
@@ -69,7 +68,7 @@ result = MyDocument;
       </header>
       <main>
         <div className="editor-container">
-          <CodeEditor value={code} onChange={setCode} />
+          <CodeEditor value={code} onChange={setCode as any} />
         </div>
         <div className="preview-container">
           <PDFPreview code={code} />
