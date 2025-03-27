@@ -1,5 +1,4 @@
-"use client"
-
+import React from 'react'
 import { useRef, useEffect } from "react"
 import * as monaco from "monaco-editor"
 import type { editor } from "monaco-editor"

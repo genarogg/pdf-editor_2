@@ -1,4 +1,4 @@
-import type React from "react"
+import React from "react"
 import { Page, Document, StyleSheet, Text } from "@react-pdf/renderer"
 
 const styles = StyleSheet.create({
@@ -45,7 +45,7 @@ const LayoutPDF: React.FC<LayoutPDFProps> = ({
 
   return (
     <Document>
-      <Page size={size} orientation={orientation} style={pageStyle}>
+      <Page size={size as any} orientation={orientation} style={pageStyle}>
         {children}
         {showPageNumbers && (
           <Text
